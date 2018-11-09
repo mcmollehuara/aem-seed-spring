@@ -1,0 +1,7 @@
+<sly data-sly-use.button="button.js">
+    <button href="${button.linkTo}" class="btn  ${properties.type || ''} ${properties.size || ''} ${button.settings}"
+        type="button" role="button">
+        ${properties.label}
+        <i data-sly-test="${button.icon != ''}" class="fa ${button.icon}"></i>
+    </button>
+</sly>

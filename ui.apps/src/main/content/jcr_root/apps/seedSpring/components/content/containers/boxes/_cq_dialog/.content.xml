@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Box"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+        <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/tabs" margin="{Boolean}false" type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1 jcr:primaryType="nt:unstructured" jcr:title="Header" sling:resourceType="granite/ui/components/foundation/section">
+                <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" type="nav"/>
+                    <items jcr:primaryType="nt:unstructured">
+                        <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                                <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Header title"
+                                    name="./title"/>
+                                <subtitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Header Subtitle"
+                                    name="./subtitle"/>
+                                <close
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Close"
+                                    name="./close"
+                                    value="true"/>  
+                                <collapse
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Collapse"
+                                    name="./collapse"
+                                    value="true"/>    
+                                <configure
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Configure"
+                                    name="./configure"
+                                    value="true"/>                                                                                                                   
+                            </items>
+                        </column>
+                    </items>
+            </tab1>	
+            <tab2 jcr:primaryType="nt:unstructured" jcr:title="Footer" sling:resourceType="granite/ui/components/foundation/section">
+                <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" type="nav"/>
+                    <items jcr:primaryType="nt:unstructured">
+                        <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                                <rightText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Right Text"
+                                    name="./rightText"/>
+                                <leftText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Left Text"
+                                    name="./leftText"/>                                                                                                                  
+                            </items>
+                        </column>
+                    </items>                
+            </tab2>	
+        </items>
+    </content>
+</jcr:root>

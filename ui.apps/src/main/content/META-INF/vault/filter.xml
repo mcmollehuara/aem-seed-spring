@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/seedSpring">
+        <exclude pattern="/apps/seedSpring/install"/>
+    </filter>
+    <filter root="/etc/clientlibs/seedSpring"/>
+    <filter root="/etc/designs/seedSpring"/>
+    <filter root="/etc/cloudservices/dynamictagmanagement/seedSpring-dtm"/>
+    <filter root="/apps/social/console/components/hbs/sitepage" mode="update"/>
+
+</workspaceFilter>

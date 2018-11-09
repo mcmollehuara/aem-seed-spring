@@ -1,0 +1,15 @@
+<!--Created by micom-->
+<sly data-sly-use.tablestatic="tablestatic.js">    
+    <table class="table ${properties.type}">        
+        <thead>
+            <tr data-sly-list="${tablestatic.header}">
+                <th >${tablestatic.header[itemList.index]}</th>
+            </tr>
+        </thead>
+        <tbody data-sly-list="${tablestatic.body}">            
+            <tr>
+                <td data-sly-repeat.row="${tablestatic.body[itemList.index]}">${row}</td>                
+            </tr>
+        </tbody>
+    </table>
+</sly>

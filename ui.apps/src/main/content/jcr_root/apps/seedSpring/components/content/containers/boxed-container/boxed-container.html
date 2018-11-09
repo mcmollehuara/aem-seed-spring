@@ -1,0 +1,9 @@
+<sly data-sly-use.boxedContainer="boxed-container.js">
+    <div class="${boxedContainer.classList}">
+        <div class="${boxedContainer.classBackgroundColor}">
+            <div class="container">
+                <sly data-sly-resource="${@path=boxedContainer.identifier, resourceType='wcm/foundation/components/responsivegrid'}" />
+            </div>
+        </div>
+    </div>
+</sly>

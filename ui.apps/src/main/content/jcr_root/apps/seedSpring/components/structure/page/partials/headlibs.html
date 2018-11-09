@@ -1,0 +1,74 @@
+<script>
+    window.CQ = window.CQ || {}
+
+</script>
+
+<!--/* Include the site client libraries (loading only the CSS in the header, JS will be loaded in the footer) */-->
+<sly data-sly-use.wcmInit="/libs/wcm/foundation/components/page/initwcm.js" data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-test.templateCategories="${wcmInit.templateCategories}" data-sly-call="${clientLib.css @ categories=templateCategories}"
+    />
+    <sly data-sly-call="${clientlib.css @ categories='seedSpring.base'}" />
+</sly>
+
+<!--/* Initialize TypeKit Fonts */-->
+<script src="https://use.typekit.net/dje4ayd.js"></script>
+<script>
+    try { Typekit.load({ async: true }); } catch (e) { }
+
+</script>
+
+
+
+<!--/* Initialize the Authoring UI */-->
+<sly data-sly-include="author.html" />
+
+<!--/* Include Context Hub */-->
+<!-- <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}" /> -->
+
+<!--/* Initialize Cloud Services */-->
+<sly data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" />
+
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/bootstrap.min.css" rel="stylesheet">
+<link href="/etc/designs/seedSpring/clientlib-site/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/switchery/switchery.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/select2/select2.min.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/dualListbox/bootstrap-duallistbox.min.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/animate.css" rel="stylesheet">
+
+<link href="/etc/designs/seedSpring/clientlib-site/css/style.css" rel="stylesheet">
+
+<!-- Jquery steps -->
+<link href="/etc/designs/seedSpring/clientlib-site/css/plugins/steps/jquery.steps.css" rel="stylesheet">

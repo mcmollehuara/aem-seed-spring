@@ -1,0 +1,15 @@
+<!--Created by micom-->
+<sly data-sly-use.switcher="switcher.js">
+    <div class="form-group">
+        <label>${properties.label}</label>
+        <input type="checkbox" class="js-switch_2" checked />
+    </div>
+
+  
+</sly>
+  <script>
+        $(document).ready(function () {
+            var elem_2 = document.querySelector('.js-switch_2');
+            var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+        });
+    </script>

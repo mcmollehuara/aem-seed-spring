@@ -1,0 +1,16 @@
+<sly data-sly-use.tabs="tabs.js">
+    <div class="tabs-container">
+        <div class="${properties.type}">
+            <ul data-sly-list.tab="${tabs.list}" class="nav nav-tabs">
+                <li class="${tab.active}"><a data-toggle="tab" href="#${tab.id}">${tab.value}</a></li>
+            </ul>
+            <div data-sly-list.content="${tabs.list}" class="tab-content">
+                <div id="${content.id}" class="tab-pane active">
+                    <div class="panel-body">
+                        <sly data-sly-resource="${@path=content.id, resourceType='wcm/foundation/components/responsivegrid'}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

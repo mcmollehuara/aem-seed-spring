@@ -1,0 +1,3 @@
+<div data-sly-use.text="text.js" class="${text.settings}">
+    <p  data-sly-unwrap="${text.context == text.CONST.CONTEXT_HTML}" class="${text.cssClass}" data-emptytext="Text">${text.text @ context=text.context}</p>
+</div>

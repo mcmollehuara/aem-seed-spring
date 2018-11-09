@@ -1,0 +1,9 @@
+<!--Created by micom-->
+
+<sly data-sly-use.forms="forms.js">
+    <div class="${properties.type  || 'form-horizontal'}">
+        <div class="row">
+            <sly data-sly-resource="${@path=forms.id, resourceType='wcm/foundation/components/responsivegrid'}" />
+        </div>
+    </div>
+</sly>

@@ -1,0 +1,15 @@
+<!--Created by micom-->
+<sly data-sly-use.bootstrapTagsInput="bootstrapTagsInput.js">
+    <div class="form-group">
+        <label>${properties.label}</label>
+        <input class="tagsinput form-control" type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" />
+    </div>   
+</sly>
+
+ <script>
+        $(document).ready(function () {
+            $('.tagsinput').tagsinput({
+                tagClass: 'label label-primary'
+            });
+        });
+    </script>

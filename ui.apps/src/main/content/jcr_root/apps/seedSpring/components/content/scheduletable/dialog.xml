@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root 
+  title="Schedule Table Component"
+  xtype="panel"
+  helpPath="en/cq/current/wcm/default_components.html#Title"
+  jcr:primaryType="cq:Dialog"
+  xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+  xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  xmlns:cq="http://www.day.com/jcr/cq/1.0">
+  <items jcr:primaryType="cq:WidgetCollection">
+  <title jcr:primaryType="nt:unstructured" 
+								sling:resourceType="granite/ui/components/foundation/form/textfield" 
+								fieldLabel="Title" name="./title" required="{Boolean}true" />
+<headerTime jcr:primaryType="nt:unstructured" 
+								sling:resourceType="granite/ui/components/foundation/form/textfield" 
+								fieldLabel="headerTime" name="./headerTime" required="{Boolean}true" />                
+<headerTalk jcr:primaryType="nt:unstructured" 
+								sling:resourceType="granite/ui/components/foundation/form/textfield" 
+								fieldLabel="headerTalk" name="./headerTalk" required="{Boolean}true" />  
+<headerSpeakers jcr:primaryType="nt:unstructured" 
+								sling:resourceType="granite/ui/components/foundation/form/textfield" 
+								fieldLabel="headerSpeakers" name="./headerSpeakers" required="{Boolean}true" />                    
+    
+  </items>
+</jcr:root>

@@ -1,0 +1,8 @@
+<sly data-sly-use.progressbar="progress-bars.js">
+    <div class="progress ${properties.type}">
+        <div  aria-valuemax="100" aria-valuemin="0" aria-valuenow="${properties.porcentage || 10}" role="progressbar"
+            class="progress-bar ${properties.color}" style="width: ${properties.porcentage  || 10 @ context='styleToken'}%;">
+            <span class="sr-only">${properties.porcentage || 10}%</span>
+        </div>
+    </div>
+</sly>

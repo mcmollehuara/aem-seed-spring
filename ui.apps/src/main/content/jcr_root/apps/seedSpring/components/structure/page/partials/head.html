@@ -1,0 +1,11 @@
+<sly data-sly-use.head="head.js">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <title>${currentPage.title || currentPage.name}</title>
+
+    <meta data-sly-test="${head.keywords}" name="keywords" content="${head.keywords}" />
+    <meta data-sly-test="${properties.jcr:description}" name="description" content="${properties.jcr:description}" />
+</sly>

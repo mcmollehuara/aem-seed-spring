@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
+	jcr:title="Progress bar" sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text">
+	<content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+	<layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" />
+		<items jcr:primaryType="nt:unstructured">
+			<column jcr:primaryType="nt:unstructured"
+				sling:resourceType="granite/ui/components/foundation/container">
+				<items jcr:primaryType="nt:unstructured">	
+					<porcentage
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/foundation/form/select"
+						fieldLabel="Porcentage"
+						name="./porcentage" 
+						required="{Boolean}true" >
+						<items jcr:primaryType="nt:unstructured">
+							<ten jcr:primaryType="nt:unstructured" text="10" value="10"/>
+							<twenty jcr:primaryType="nt:unstructured" text="20" value="20"/>
+							<thirty jcr:primaryType="nt:unstructured" text="30" value="30"/>
+							<forty jcr:primaryType="nt:unstructured" text="40" value="40"/>
+							<fifty jcr:primaryType="nt:unstructured" text="50" value="50"/>
+							<sixty jcr:primaryType="nt:unstructured" text="60" value="60"/>
+							<seventy jcr:primaryType="nt:unstructured" text="70" value="70"/>
+							<eighty jcr:primaryType="nt:unstructured" text="80" value="80"/>																																										
+							<ninety jcr:primaryType="nt:unstructured" text="90" value="90"/>
+							<onehundred jcr:primaryType="nt:unstructured" text="100" value="100"/>														
+						</items>
+					</porcentage>						
+					<type
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/foundation/form/select"
+						fieldLabel="Type"
+						name="./type" 
+						required="{Boolean}true" >
+						<items jcr:primaryType="nt:unstructured">
+							<basic jcr:primaryType="nt:unstructured" text="Basic" value=""/>
+							<striped jcr:primaryType="nt:unstructured" text="Striped" value="progress-striped"/>
+							<actived jcr:primaryType="nt:unstructured" text="Striped active" value="progress-striped active"/>
+						</items>
+					</type>																		
+					<color
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/foundation/form/select"
+						fieldLabel="Color"
+						name="./color">
+						<items jcr:primaryType="nt:unstructured">
+							<default jcr:primaryType="nt:unstructured" text="Default" value="progress-bar"/>																	
+							<brand jcr:primaryType="nt:unstructured" text="Brand" value="progress-bar-primary"/>
+							<success jcr:primaryType="nt:unstructured" text="Success" value="progress-bar-success"/>															
+							<info jcr:primaryType="nt:unstructured" text="Info" value="progress-bar-info"/>					
+							<warning jcr:primaryType="nt:unstructured" text="Warning" value="progress-bar-warning"/>
+							<danger jcr:primaryType="nt:unstructured" text="Danger" value="progress-bar-danger"/>																																
+						</items>
+					</color>
+				</items>			
+			</column>
+		</items>	
+	</content>
+</jcr:root>

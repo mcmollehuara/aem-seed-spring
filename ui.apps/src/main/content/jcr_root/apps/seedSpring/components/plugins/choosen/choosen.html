@@ -1,0 +1,17 @@
+<!--Created by micom-->
+<sly data-sly-use.choosen="choosen.js">
+    <div class="form-group">
+        <label>${properties.label}</label>
+        <div>
+            <select data-sly-list.item="${choosen.list}" data-placeholder="${properties.emptyText}" multiple class="chosen-select" ${properties.type  || '' @ context='stringToken'}>
+                 <option>${item}</option>    
+            </select>
+        </div>
+    </div>
+</sly>
+<script>
+    $(document).ready(function () {
+        $('.chosen-select').chosen({ width: "100%" });
+    });
+
+</script>

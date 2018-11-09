@@ -1,0 +1,18 @@
+<!--Created by micom-->
+<sly data-sly-use.rangeSlider="rangeSlider.js">
+    <div id="ionrange_1"></div>
+   
+</sly>
+ <script>
+        $(document).ready(function () {
+            $("#ionrange_1").ionRangeSlider({
+                min: 0,
+                max: 5000,
+                type: 'double',
+                prefix: "$",
+                maxPostfix: "+",
+                prettify: false,
+                hasGrid: true
+            });
+        });
+    </script>

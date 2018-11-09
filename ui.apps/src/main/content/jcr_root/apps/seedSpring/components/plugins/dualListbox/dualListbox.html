@@ -1,0 +1,26 @@
+<!--Created by micom-->
+<sly data-sly-use.dualListbox="dualListbox.js">
+    <form id="form" action="#" class="wizard-big">
+        <select class="form-control dualListboxId" multiple>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option selected value="Austria">Austria</option>
+            <option selected value="Bahamas">Bahamas</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Bermuda">Bermuda</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Canada">Canada</option>
+        </select>
+    </form>
+</sly>
+<script>
+    $(document).ready(function () {
+        $('.dualListboxId').bootstrapDualListbox({
+            selectorMinimalHeight: 160
+        });
+    });
+</script>

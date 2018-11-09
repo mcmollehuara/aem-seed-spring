@@ -1,0 +1,9 @@
+<!--Created by micom-->
+<sly data-sly-use.select="select.js">
+    <div class="form-group">
+        <label>${properties.label}</label>
+        <select data-sly-list.item="${select.list}" placeholder="${properties.emptyText}" name="${properties.name}" class="form-control">
+        <option>${item}</option>    
+    </select>
+    </div>
+</sly>

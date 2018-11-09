@@ -1,0 +1,23 @@
+<!--Created by micom-->
+<sly data-sly-use.touchSpin="touchSpin.js">
+    <div class="form-group">
+        <label>${properties.label}</label>
+        <input class="touchSpinId" type="text" value="0" placeholder="${properties.emptyText}" name="${properties.label}">
+    </div>
+  
+</sly>
+  <script>
+        $(document).ready(function () {
+            $(".touchSpinId").TouchSpin({
+                min: 0,
+                max: 100,
+                step: 0.1,
+                decimals: 2,
+                boostat: 5,
+                maxboostedstep: 10,
+                postfix: '%',
+                buttondown_class: 'btn btn-white',
+                buttonup_class: 'btn btn-white'
+            });
+        });
+    </script>

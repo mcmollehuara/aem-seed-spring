@@ -1,0 +1,17 @@
+<sly data-sly-use.steps="steps.js">
+    <div id="wizard" data-sly-list.item="${steps.list}">
+        <h1>${item.value}</h1>
+        <div class="step-content">
+            <div class="text-center m-t-md">
+                ${item.id}
+                <sly data-sly-resource="${@path=item.id, resourceType='wcm/foundation/components/responsivegrid'}" />
+            </div>
+        </div>
+    </div>
+</sly>
+
+<script>
+    $(document).ready(function () {
+        $("#wizard").steps();
+    });
+</script>

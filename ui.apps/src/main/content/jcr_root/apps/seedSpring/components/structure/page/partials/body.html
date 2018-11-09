@@ -1,0 +1,13 @@
+
+
+<div data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer">
+
+    <sly data-sly-repeat="${templatedContainer.structureResources}" data-sly-resource="${item.path @ resourceType=item.resourceType, decorationTagName='div'}">
+        <!--<div class="wrapper wrapper-content">
+            <div class="container">
+            </div>
+        </div>-->
+    </sly>
+
+    <div data-sly-resource="${'cloudservices' @ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}" data-sly-unwrap></div>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/seedSpring"/>
+
+	<filter root="/etc/community/seedSpring"/>
+
+	<filter root="/content/campaigns/seedSpring"/>
+	<filter root="/content/dam/collections/w/seedSpring" mode="merge"/>
+	<filter root="/content/seedSpring">
+		<exclude pattern="/content/seedSpring/community(/.*)"/>
+	</filter>
+</workspaceFilter>

@@ -1,0 +1,16 @@
+<!--Created by micom-->
+<sly data-sly-use.clockPicker="clockPicker.js">
+    <div class="input-group clockpicker" data-autoclose="true">
+        <input type="text" class="form-control" value="09:30">
+        <span class="input-group-addon">
+            <span class="fa fa-clock-o"></span>
+        </span>
+    </div>
+   
+</sly>
+
+ <script>
+        $(document).ready(function () {
+            $('.clockpicker').clockpicker();
+        });
+    </script>
