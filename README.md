@@ -53,9 +53,11 @@ The project comes with the auto-public repository configured. To setup the repos
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
 
+## Credits to:
+    https://github.com/dfparker2002/aemspademo
+
 
 ## MEBA Configuration:
-
 https://neba.io/documentation.html
 
 ## SpringFramework Configuration:
